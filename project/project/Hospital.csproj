@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96462AFF-CC21-4B47-A4E8-7851BE548E1E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddFamilyMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFamilyMember.Designer.cs">
+      <DependentUpon>AddFamilyMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPatien.cs" />
+    <Compile Include="AddPatien.Designer.cs">
+      <DependentUpon>AddPatien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs" />
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminadd.cs" />
+    <Compile Include="adminadd.Designer.cs">
+      <DependentUpon>adminadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminaddmanagmentstaff.cs" />
+    <Compile Include="adminaddmanagmentstaff.Designer.cs">
+      <DependentUpon>adminaddmanagmentstaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminaddmedicalstaff.cs" />
+    <Compile Include="adminaddmedicalstaff.Designer.cs">
+      <DependentUpon>adminaddmedicalstaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminaddpatientsandrelatives.cs" />
+    <Compile Include="adminaddpatientsandrelatives.Designer.cs">
+      <DependentUpon>adminaddpatientsandrelatives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admindelete.cs" />
+    <Compile Include="admindelete.Designer.cs">
+      <DependentUpon>admindelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminpasswordmanagement.cs" />
+    <Compile Include="adminpasswordmanagement.Designer.cs">
+      <DependentUpon>adminpasswordmanagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminupdatedata.cs" />
+    <Compile Include="adminupdatedata.Designer.cs">
+      <DependentUpon>adminupdatedata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminupdatemangingstaff.cs" />
+    <Compile Include="adminupdatemangingstaff.Designer.cs">
+      <DependentUpon>adminupdatemangingstaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminupdatemedical.cs" />
+    <Compile Include="adminupdatemedical.Designer.cs">
+      <DependentUpon>adminupdatemedical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminupdatepatientsandrelatives.cs" />
+    <Compile Include="adminupdatepatientsandrelatives.Designer.cs">
+      <DependentUpon>adminupdatepatientsandrelatives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminviewdata.cs" />
+    <Compile Include="adminviewdata.Designer.cs">
+      <DependentUpon>adminviewdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminviewmanagmentstaff.cs" />
+    <Compile Include="adminviewmanagmentstaff.Designer.cs">
+      <DependentUpon>adminviewmanagmentstaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminviewmedicalstaff.cs" />
+    <Compile Include="adminviewmedicalstaff.Designer.cs">
+      <DependentUpon>adminviewmedicalstaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminviewpatientsandrelatives.cs" />
+    <Compile Include="adminviewpatientsandrelatives.Designer.cs">
+      <DependentUpon>adminviewpatientsandrelatives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ambulance.cs" />
+    <Compile Include="Ambulance.Designer.cs">
+      <DependentUpon>Ambulance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AskQuestion.cs" />
+    <Compile Include="AskQuestion.Designer.cs">
+      <DependentUpon>AskQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookappointmint.cs" />
+    <Compile Include="bookappointmint.Designer.cs">
+      <DependentUpon>bookappointmint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="DBManager.cs" />
+    <Compile Include="DeleteApp.cs" />
+    <Compile Include="DeleteApp.Designer.cs">
+      <DependentUpon>DeleteApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor.cs" />
+    <Compile Include="Doctor.Designer.cs">
+      <DependentUpon>Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorEmergencyRoom.cs" />
+    <Compile Include="DoctorEmergencyRoom.Designer.cs">
+      <DependentUpon>DoctorEmergencyRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorQ.cs" />
+    <Compile Include="DoctorQ.Designer.cs">
+      <DependentUpon>DoctorQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorSchadual.cs" />
+    <Compile Include="DoctorSchadual.Designer.cs">
+      <DependentUpon>DoctorSchadual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FamilyMember.cs" />
+    <Compile Include="FamilyMember.Designer.cs">
+      <DependentUpon>FamilyMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs" />
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs" />
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient.cs" />
+    <Compile Include="Patient.Designer.cs">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientFamilyMember.cs" />
+    <Compile Include="PatientFamilyMember.Designer.cs">
+      <DependentUpon>PatientFamilyMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientOperations.cs" />
+    <Compile Include="PatientOperations.Designer.cs">
+      <DependentUpon>PatientOperations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs" />
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rate.cs" />
+    <Compile Include="Rate.Designer.cs">
+      <DependentUpon>Rate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receptionist.cs" />
+    <Compile Include="Receptionist.Designer.cs">
+      <DependentUpon>Receptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs" />
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomsRequests.cs" />
+    <Compile Include="RoomsRequests.Designer.cs">
+      <DependentUpon>RoomsRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowFamilyMember.cs" />
+    <Compile Include="ShowFamilyMember.Designer.cs">
+      <DependentUpon>ShowFamilyMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopRatedDoctor.cs" />
+    <Compile Include="TopRatedDoctor.Designer.cs">
+      <DependentUpon>TopRatedDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viset.cs" />
+    <Compile Include="Viset.Designer.cs">
+      <DependentUpon>Viset.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddFamilyMember.resx">
+      <DependentUpon>AddFamilyMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPatien.resx">
+      <DependentUpon>AddPatien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminadd.resx">
+      <DependentUpon>adminadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminaddmanagmentstaff.resx">
+      <DependentUpon>adminaddmanagmentstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminaddmedicalstaff.resx">
+      <DependentUpon>adminaddmedicalstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminaddpatientsandrelatives.resx">
+      <DependentUpon>adminaddpatientsandrelatives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admindelete.resx">
+      <DependentUpon>admindelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminpasswordmanagement.resx">
+      <DependentUpon>adminpasswordmanagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminupdatedata.resx">
+      <DependentUpon>adminupdatedata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminupdatemangingstaff.resx">
+      <DependentUpon>adminupdatemangingstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminupdatemedical.resx">
+      <DependentUpon>adminupdatemedical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminupdatepatientsandrelatives.resx">
+      <DependentUpon>adminupdatepatientsandrelatives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminviewdata.resx">
+      <DependentUpon>adminviewdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminviewmanagmentstaff.resx">
+      <DependentUpon>adminviewmanagmentstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminviewmedicalstaff.resx">
+      <DependentUpon>adminviewmedicalstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminviewpatientsandrelatives.resx">
+      <DependentUpon>adminviewpatientsandrelatives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ambulance.resx">
+      <DependentUpon>Ambulance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AskQuestion.resx">
+      <DependentUpon>AskQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookappointmint.resx">
+      <DependentUpon>bookappointmint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteApp.resx">
+      <DependentUpon>DeleteApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor.resx">
+      <DependentUpon>Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorEmergencyRoom.resx">
+      <DependentUpon>DoctorEmergencyRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorQ.resx">
+      <DependentUpon>DoctorQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorSchadual.resx">
+      <DependentUpon>DoctorSchadual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FamilyMember.resx">
+      <DependentUpon>FamilyMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient.resx">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientFamilyMember.resx">
+      <DependentUpon>PatientFamilyMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientOperations.resx">
+      <DependentUpon>PatientOperations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rate.resx">
+      <DependentUpon>Rate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptionist.resx">
+      <DependentUpon>Receptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomsRequests.resx">
+      <DependentUpon>RoomsRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowFamilyMember.resx">
+      <DependentUpon>ShowFamilyMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopRatedDoctor.resx">
+      <DependentUpon>TopRatedDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viset.resx">
+      <DependentUpon>Viset.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RepBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\family.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ambulance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36Z_2105.w022.n001.426B.p15.426.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3819824.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\room.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adminbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blur-hospital.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adminbg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReBg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-rated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v1005-23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\faqs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emergency.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\An.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
